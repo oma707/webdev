@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Instagram</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" />
+        <style>
+            *{
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+
+            body {
+              background-color: #fafafa;
+              font-family: Helvetica, sans-serif;
+              min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+
+            .wrapper {
+              display: flex;
+              flex-grow: 1;
+              align-items: center;
+              justify-content: center;
+            }
+
+            .left {
+              position: relative;
+            }
+
+            .screen {
+              position: absolute;
+              left: 150px;
+              top: 100px;
+            }
+
+            .panel {
+              width: 350px;
+              background-color: #fff;
+              border: 1px solid #dedede;
+              border-radius: 2px;
+              padding: 20px 40px;
+              margin: 5px 0;
+              display: flex;
+            }
+
+            .login {
+              flex-direction: column;
+              align-items: center;
+            }
+
+            #logo {
+              width: 65%;
+              margin-top: 20px;
+              margin-bottom: 30px;
+            }
+
+            form {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+
+            .input-box {
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 10px;
+              background-color: #fafafa;
+              border: 1px solid #dedede;
+              border-radius: 2px;
+            }
+
+            .input-box:placeholder {
+              color: #8a8a8a;
+              font-size: 12px;
+            }
+
+            .input-box:focus {
+              outline: none;
+              border: 1px solid #8a8a8a;
+            }
+
+            .button {
+              width: 100%;
+              margin: 10px 0;
+              padding: 7px 0;
+              background-color: #b2dffc;
+              color: #fff;
+              border-radius: 5px;
+              border: none;
+              font-size: 14px;
+            }
+
+            .divider {
+              display: flex;
+              width: 100%;
+              font-size: 12px;
+              color: #8a8a8a;
+              font-weight: bold;
+              gap: 20px;
+              align-items: center;
+            }
+
+            .line {
+              flex: 1;
+              height: 1px;
+              background-color: #8a8a8a;
+            }
+
+            .fb {
+              margin: 20px 0;
+              color: #3b5998;
+              text-decoration: none;
+              font-size: 14px;
+              font-weight: 600;
+            }
+
+            .fb::before {
+              font-family: "Font Awesome 5 Brands";
+              margin-right: 5px;
+              font-size: 18px;
+            }
+
+            .forgot {
+              color: #000;
+              text-decoration: none;
+              font-size: 12px;
+            }
+
+            .signup {
+              justify-content: center;
+              gap: 5px;
+              font-size: 14px;
+            }
+
+            .signup a {
+              color: #3bb1ff;
+              text-decoration: none;
+              font-weight: 600;
+            }
+
+            .apps {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              font-size: 14px;
+              margin: 20px 0;
+            }
+
+            .app-stores {
+              display: flex;
+              gap: 10px;
+              margin-top: 20px;
+            }
+
+            .app-stores img {
+              width: 140px;
+              height: auto;
+            }
+            a {
+              color: #8a8a8a;
+              text-decoration: none;
+            }
+
+        </style>
+        
+    </head>
+
+    
+    <body>
+  <section class="wrapper">
+    <div class="left">
+      <img src="phone.png" alt="phone">
+      <img class="screen" src="insta4.jpg" alt="phone-screen">
+    </div>
+    <div class="right">
+      <div class="panel login">
+        <img id="logo" src="logo.png" alt="logo">
+        <form>
+          <input class="input-box" type="text" placeholder="Phone number, username, or email">
+          <input class="input-box" type="text" placeholder="Password">
+          <input class="button" type="submit" value="Log In">
+          <div class="divider">
+            <div class="line"></div>
+            <p>OR</p>
+            <div class="line"></div>
+          </div>
+            <a class="fb" href=""><img src="fblogo.png" style="width:18px;height: 18px;">Log in with Facebook</a>
+          <a class="forgot" href="">Forgot password?</a>
+        </form>
+      </div>
+      <div class="panel signup">
+        <p>Don't have an account?</p>
+        <a href="">Sign up</a>
+      </div>
+      <div class="apps">
+        <p>Get the app.</p>
+        <div class="app-stores">
+          <img src="appstoree.png" alt="App Store">
+          <img src="playstore.png" alt="Play Store">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
